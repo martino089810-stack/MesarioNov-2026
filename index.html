@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#2b101b" name="theme-color"/>
+  <title>
+   Vamos a cerrar 2026 con broche de oro
+  </title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <main class="wrap">
+   <section class="hero section" id="inicio">
+    <div>
+     <div class="eyebrow">
+      Una peque&ntilde;a sorpresa para ti
+     </div>
+     <h1>
+      Vamos a cerrar
+      <br/>
+      <span class="gold">
+       2026
+      </span>
+      con broche de oro
+     </h1>
+     <p class="lead">
+      Hay algo que quiero que descubras&hellip;
+      <br/>
+      pero tendr&aacute;s que tocar el coraz&oacute;n.
+     </p>
+     <button aria-label="Presiona el coraz&oacute;n" class="heart" id="heart">
+      ❤️
+     </button>
+     <div class="message" id="heartMessage">
+      Presiona el coraz&oacute;n
+     </div>
+     <div class="hint" id="heartHint">
+      0 / 5
+     </div>
+     <div class="hidden" id="unlock">
+      <button class="btn" onclick="document.getElementById('historia').scrollIntoView({behavior:'smooth'})">
+       Entrar a nuestra historia ✨
+      </button>
+     </div>
+    </div>
+   </section>
+   <nav class="section-nav">
+    <a href="#historia">
+     Nuestro a&ntilde;o
+    </a>
+    <a href="#ella">
+     T&uacute;
+    </a>
+    <a href="#cancion">
+     Canci&oacute;n
+    </a>
+    <a href="#recuerdos">
+     Recuerdos
+    </a>
+    <a href="#sorpresa">
+     Regalo
+    </a>
+    <a href="#ruleta">
+     Ruleta
+    </a>
+    <a href="#agenda">
+     Agenda
+    </a>
+    <a href="#metas">
+     Metas
+    </a>
+    <a href="#2027">
+     2027
+    </a>
+   </nav>
+
+   <section class="section center" id="historia">
+    <div class="eyebrow">
+     01 &middot; Un a&ntilde;o que vale recordar
+    </div>
+    <h2>
+     Lo que vivimos este a&ntilde;o
+    </h2>
+    <div class="photo-frame">
+     <img
+    alt="Nuestra foto juntos"
+    id="yearPhoto"
+    src="fotos/nuestro-2026.jpeg">
+     <div class="caption">
+      Un a&ntilde;o lleno de historias&hellip;
+     </div>
+    </div>
+        <p class="lead">
+     Este a&ntilde;o no fue perfecto. Hubo d&iacute;as sencillos, d&iacute;as complicados, retos que no imagin&aacute;bamos y momentos que nos pusieron a prueba. Pero tambi&eacute;n hubo risas, detalles, compa&ntilde;&iacute;a y recuerdos que hoy guardo con mucho cari&ntilde;o.
+    </p>
+    <p class="script">
+     Y entre tantas cosas que pasaron, me quedo con lo bonito que fue compartir parte del camino contigo.
+    </p>
+   </section>
+
+
+   <section class="section center" id="ella">
+    <div class="eyebrow">
+     02 &middot; Lo que significas
+    </div>
+    <h2>
+     Qu&eacute; bonito coincidir contigo
+    </h2>
+    <p class="lead">
+     Tenerte como pareja, como mujer, como amiga y como compa&ntilde;era es algo que valoro profundamente. Me inspiras a mirar hacia adelante, a querer crecer, a dar m&aacute;s de m&iacute; y a no conformarme con ser quien fui ayer.
+    </p>
+    <p class="lead">
+     Admiro tu fuerza, tu forma de ser, tus ideas, tus detalles y esa mujer que eres incluso en los d&iacute;as en los que quiz&aacute; t&uacute; misma no alcanzas a ver todo lo que vales.
+    </p>
+    <div class="divider">
+     ♡ ✦ ♡
+    </div>
+    <p class="script">
+     Gracias por ser parte de mis d&iacute;as y de las razones que me impulsan a ser mejor.
+    </p>
+   </section>
+
+   <section class="section center" id="cancion">
+    <div class="eyebrow">
+     03 &middot; Banda sonora de nosotros
+    </div>
+    <h2>
+     Nuestra canci&oacute;n
+    </h2>
+    <div class="tape" id="tape">
+     <div class="tape-label">
+      <div class="eyebrow" style="color:#6a3447">
+       Side A &middot; Para nosotros
+      </div>
+      <h3 id="songName">
+       Nuestra canci&oacute;n
+      </h3>
+      <div class="reels">
+       <div class="reel">
+       </div>
+       <div class="reel">
+       </div>
+      </div>
+      <button class="btn" id="playBtn">
+       ▶ PLAY
+      </button>
+     </div>
+    </div>
+    <audio
+    id="audio"
+    src="musica/nuestra-cancion.mp3"
+    preload="metadata">
+</audio>
+    <p class="script">
+     Esta canci&oacute;n siempre me lleva a ti.
+    </p>
+   </section>
+
+
+   <section class="section" id="recuerdos">
+    <div class="eyebrow center">
+     04 &middot; Peque&ntilde;os tesoros
+    </div>
+    <h2 class="center">
+     Cinco recuerdos que guardo
+    </h2>
+    <div class="grid memories-grid">
+     <article class="memory memory-photo">
+      <div class="number">
+       01
+      </div>
+      <img alt="Nuestra primera salida" class="memory-image" id="memoryPhoto1" src="fotos/recuerdo1.jpg"/>
+      <h3>
+       Nuestra primera salida
+      </h3>
+     </article>
+     <article class="memory memory-photo">
+      <div class="number">
+       02
+      </div>
+      <img alt="Nuestras primeras fiestas" class="memory-image" id="memoryPhoto2" src="fotos/recuerdo2.jpg"/>
+      <h3>
+       Nuestras primeras fiestas
+      </h3>
+     </article>
+     <article class="memory memory-photo">
+      <div class="number">
+       03
+      </div>
+      <img alt="Nuestros momentos de locura" class="memory-image" id="memoryPhoto3" src="fotos/recuerdo3.jpg"/>
+      <h3>
+       Nuestros momentos de locura
+      </h3>
+     </article>
+     <article class="memory memory-photo">
+      <div class="number">
+       04
+      </div>
+      <img alt="Tu felicidad inigualable" class="memory-image" id="memoryPhoto4" src="fotos/recuerdo4.jpg"/>
+      <h3>
+       Tu felicidad inigualable
+      </h3>
+     </article>
+     <article class="memory memory-photo memory-wide">
+      <div class="number">
+       05
+      </div>
+      <img alt="Nosotros juntos en todo momento" class="memory-image" id="memoryPhoto5" src="fotos/recuerdo5.jpg"/>
+      <h3>
+       Nosotros juntos en todo momento
+      </h3>
+     </article>
+    </div>
+   </section>
+   <section class="section center" id="sorpresa">
+    <div class="eyebrow">
+     05 &middot; Abre cuando quieras
+    </div>
+    <h2>
+     Hay algo para ti
+    </h2>
+    <p class="lead">
+     No hagas trampa&hellip; toca la cajita. 🎁
+    </p>
+    <button aria-label="Abrir sorpresa" class="gift" id="gift">
+     🎁
+    </button>
+    <div class="hidden reveal card" id="giftReveal">
+     <div class="eyebrow">
+      &iexcl;Sorpresa!
+     </div>
+     <h2>
+      Un vale por&hellip;
+     </h2>
+     <p class="lead" id="giftText">
+      Tu sorpresa est&aacute; esperando&hellip; ❤️
+     </p>
+     <p class="script">
+      Este cup&oacute;n se canjea cuando t&uacute; quieras.
+     </p>
+    </div>
+    <button class="btn" id="resetGift" style="display:none">
+     Volver a cerrar 🎁
+    </button>
+   </section>
+   <section class="section center" id="ruleta">
+    <div class="eyebrow">
+     06 &middot; Que decida la suerte
+    </div>
+    <h2>
+     La ruleta de nuestros antojos
+    </h2>
+    <p class="lead">
+     &iquest;Qu&eacute; hacemos en nuestra pr&oacute;xima cita?
+    </p>
+    <div class="wheel-wrap">
+     <div class="pointer">
+     </div>
+     <div class="wheel" id="wheel">
+     </div>
+    </div>
+    <button class="btn" id="spin">
+     Girar ruleta ✨
+    </button>
+    <div class="wheel-result" id="wheelResult">
+    </div>
+    <p class="small">
+     Cine &middot; Elotes &middot; Bailar &middot; Tu restaurante favorito &middot; Tacos &middot; Elegir un restaurante nuevo juntos
+    </p>
+   </section>
+   <section class="section" id="agenda">
+    <div class="eyebrow center">
+     07 &middot; Apartemos momentos
+    </div>
+    <h2 class="center">
+     Nuestra agenda
+    </h2>
+    <p class="small center">
+   
+    </p>
+    <div class="card date-card">
+     <div class="date">
+      <strong>
+       ♡
+      </strong>
+      PRONTO
+     </div>
+     <div>
+      <h3>
+       Fiesta de Fin Año
+      </h3>
+      <p class="small">
+       Emocion, risas, baile y diversion entre nosotros.
+      </p>
+     </div>
+    </div>
+    <div class="card date-card">
+     <div class="date">
+      <strong>
+       ♡
+      </strong>
+      PRONTO
+     </div>
+     <div>
+      <h3>
+       Una escapada con los amigos
+      </h3>
+      <p class="small">
+       Diversion y viaje entre amigos.
+      </p>
+     </div>
+    </div>
+    <div class="card date-card">
+     <div class="date">
+      <strong>
+       ♡
+      </strong>
+      PRONTO
+     </div>
+     <div>
+      <h3>
+       Un desayuno rico tu y yo
+      </h3>
+      <p class="small">
+       Empezar el d&iacute;a con algo bonito.
+      </p>
+     </div>
+    </div>
+    <div class="card date-card">
+     <div class="date">
+      <strong>
+       ♡
+      </strong>
+      PRONTO
+     </div>
+     <div>
+      <h3>
+       Un Viaje unico entre tu y yo
+      </h3>
+      <p class="small">
+       Un lugar nuevo para descubrir.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="metas">
+    <div class="eyebrow center">
+     08 &middot; Lo que elegimos cuidar
+    </div>
+    <h2 class="center">
+     Nuestros prop&oacute;sitos
+    </h2>
+    <div class="card">
+     <ul class="list">
+      <li>
+       Hablar con honestidad, incluso cuando algo sea dif&iacute;cil.
+      </li>
+      <li>
+       Escucharnos con paciencia y curiosidad, no con suposiciones.
+      </li>
+      <li>
+       Respetar los espacios, tiempos y l&iacute;mites de cada uno.
+      </li>
+      <li>
+       Compartir momentos de calidad, sin que todo tenga que ser extraordinario.
+      </li>
+      <li>
+       Siempre tratarnos como nos gustaria ser tratados por el.
+      </li>
+      <li>
+       Celebrar los logros del otro y acompa&ntilde;arnos en los d&iacute;as dif&iacute;ciles.
+      </li>
+      <li>
+       Construir confianza con hechos, constancia y cuidado.
+      </li>
+      <li>
+       Seguir creciendo individualmente y, si ambos lo elegimos, tambi&eacute;n juntos.
+      </li>
+     </ul>
+    </div>
+    <p class="script center">
+     No se trata de prometer una vida perfecta; se trata de cuidar lo que queremos construir.
+    </p>
+   </section>
+   
+   <section class="section center" id="2027">
+    <div class="eyebrow">
+     10 &middot; Un nuevo cap&iacute;tulo
+    </div>
+    <h2>
+     Lo que nos espera en 2027&hellip;
+    </h2>
+    <p class="lead">
+     No s&eacute; qu&eacute; traer&aacute; el pr&oacute;ximo a&ntilde;o, pero me gustar&iacute;a que nos encuentre con m&aacute;s calma, m&aacute;s verdad y m&aacute;s ganas de cuidar aquello que nos hace bien.
+    </p>
+    <div class="slides" id="slides">
+     <div class="slide active">
+      <div style="font-size:55px">
+       🌅
+      </div>
+      <h3>
+       Un nuevo comienzo
+      </h3>
+      <p>
+       Elegir empezar desde la comprensi&oacute;n, con cari&ntilde;o y con la disposici&oacute;n de escucharnos.
+      </p>
+     </div>
+     <div class="slide">
+      <div style="font-size:55px">
+       ☕
+      </div>
+      <h3>
+       Peque&ntilde;as citas, grandes recuerdos
+      </h3>
+      <p>
+       M&aacute;s desayunos, caf&eacute;s, caminatas, risas y tiempo compartido sin prisa.
+      </p>
+     </div>
+     <div class="slide">
+      <div style="font-size:55px">
+       🧭
+      </div>
+      <h3>
+       Nuevas aventuras
+      </h3>
+      <p>
+       Conocer lugares, probar cosas nuevas y guardar historias que un d&iacute;a recordemos sonriendo.
+      </p>
+     </div>
+     <div class="slide">
+      <div style="font-size:55px">
+       🤝
+      </div>
+      <h3>
+       Un equipo que se cuida
+      </h3>
+      <p>
+       Comprensi&oacute;n, respeto, apoyo mutuo y libertad para ser nosotros mismos.
+      </p>
+     </div>
+     <div class="slide">
+      <div style="font-size:55px">
+       💗
+      </div>
+      <h3>
+       Lo que construyamos
+      </h3>
+      <p>
+       Que sea sincero, bonito, rec&iacute;proco y elegido cada d&iacute;a por ambos.
+      </p>
+     </div>
+    </div>
+    <div class="dots" id="dots">
+    </div>
+    <div style="display:flex;justify-content:center;gap:10px">
+     <button class="btn" id="prevSlide">
+      &larr;
+     </button>
+     <button class="btn" id="nextSlide">
+      &rarr;
+     </button>
+    </div>
+    <p class="script" style="margin-top:28px">
+     Ojal&aacute; la vida nos regale muchos motivos para seguir sonriendo.
+    </p>
+   </section>
+   <footer>
+    <div class="divider">
+     ♡ ✦ ♡
+    </div>
+    Hecho con cari&ntilde;o, un detalle a la vez.
+    <br/>
+    <span class="script">
+     Un cierre bonito para 2026.
+     <br>Te quiero</br>
+     <br>Atte:</br>
+     <br>-C-</br>
+    </span>
+   </footer>
+  </main>
+  <div class="floating" onclick="document.getElementById('inicio').scrollIntoView({behavior:'smooth'})">
+   &uarr; Volver al inicio
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
